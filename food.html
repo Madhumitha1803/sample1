@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tree Hotel</title>
+    <style>
+        /* Add CSS styles for landscape images */
+        img {
+            width: 50%; /* Make the image width 50% of its container */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        /* Center align section content (categories and images) */
+        section {
+            text-align: center;
+        }
+
+        /* Add CSS styles for the grid */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column */
+            background: #3498db; /* Blue color for the background */
+            color: #fff; /* White text color */
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Position for absolute elements */
+        }
+
+        .grid h1 {
+            margin: 0;
+            font-size: 32px; /* Increase the font size for the header */
+        }
+
+        /* Style for the contact information */
+        .contact-info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        /* Style for the navigation menu */
+        .menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline;
+            margin-right: 20px;
+            font-size: 20px; /* Increase the font size for the menu items */
+        }
+
+        /* Remove link for "Contact Us" in the menu */
+        .menu li a[href="#contact-us"] {
+            text-decoration: none;
+        }
+
+        /* Style for the contact information dropdown */
+        .contact-info-dropdown {
+            display: none;
+            position: absolute;
+            top: 30px; /* Adjust dropdown's position */
+            right: 0;
+            background: #fff; /* White background color for "Contact Us" dropdown */
+            color: #000; /* Black text color */
+            border: 1px solid #ccc; /* Add border */
+            padding: 10px;
+            min-width: 200px; /* Increase the dropdown width */
+        }
+
+        .menu li:hover .contact-info-dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <h1>Hotel Tree</h1>
+        <div class="menu">
+            <ul>
+                <!-- Remove the link for "Contact Us" -->
+                <li><a href="aboutus.html">About Us</a></li>
+                <!-- Add more menu items here as needed -->
+                <li>Contact Us
+                    <div class="contact-info-dropdown">
+                        <p>Email: example@email.com</p>
+                        <p>Phone: +123456789</p>
+                        <p>Address: 123 Main St, City</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="veg">
+        <h2>
+            <a href="veg.html">Category 1: Veg</a>
+        </h2>
+        <p>Explore our delicious vegetarian menu.</p>
+        <img src="veg.jpg" alt="Vegetarian Dish">
+    </section>
+
+    <section id="nonveg">
+        <h2>
+            <a href="nonveg.html">Category 2: Non Veg</a>
+        </h2>
+        <p>Indulge in our mouthwatering non-vegetarian dishes.</p>
+        <img src="nonveg.jpg" alt="Non-Vegetarian Dish">
+    </section>
+
+    <section id="fastfood">
+        <h2>
+            <a href="ffood.html">Category 3: Fast Food</a>
+        </h2>
+        <p>Quick and tasty fast food options for on-the-go.</p>
+        <img src="fastfood.jpg" alt="Fast Food">
+    </section>
+
+    <section id="snack">
+        <h2>
+            <a href="snacks.html">Category 4: Snacks</a>
+        </h2>
+        <p>Enjoy a variety of snack items.</p>
+        <img src="snack.jpg" alt="Snack">
+    </section>
+
+  
+
+    <footer>
+        <!-- Contact information in the footer (optional) -->
+        <p>Contact us for more information: example@email.com</p>
+    </footer>
+</body>
+</html>
